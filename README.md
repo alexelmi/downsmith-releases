@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="img/icon.svg" width="112" height="112" alt="Hashsmith anvil icon">
+  <img src="img/icon.svg" width="112" height="112" alt="Downsmith anvil icon">
 </p>
 
-<h1 align="center">Hashsmith</h1>
+<h1 align="center">Downsmith</h1>
 
 <p align="center">
   <strong>Shape your Markdown.</strong><br>
@@ -12,9 +12,9 @@
 <p align="center">
   <a href="../../releases/latest"><b>⬇️ Download the latest release</b></a>
   &nbsp;·&nbsp;
-  <a href="https://hashsmith.dev">Website</a>
+  <a href="https://downsmith.dev">Website</a>
   &nbsp;·&nbsp;
-  <a href="https://hashsmith.dev/de/">Deutsch</a>
+  <a href="https://downsmith.dev/de/">Deutsch</a>
 </p>
 
 <p align="center">
@@ -26,15 +26,15 @@
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="img/app-dark.png">
-    <img src="img/app-light.png" alt="Hashsmith window: tabs on top, a folder sidebar, the Markdown source in the middle and the rendered page on the right" width="860">
+    <img src="img/app-light.png" alt="Downsmith window: tabs on top, a folder sidebar, the Markdown source in the middle and the rendered page on the right" width="860">
   </picture>
 </p>
 
-## Why Hashsmith
+## Why Downsmith
 
 - **Live preview.** Source on the left, rendered page on the right. Tables, task lists and code blocks with syntax highlighting.
 - **Tabs.** Open several files at once, each with its own undo history. Your tabs come back at the next start, and closing with unsaved changes asks Save, Don't Save or Cancel.
-- **Your view.** Show only the source, only the preview or both side by side. Hide the sidebar and drag the dividers to resize the columns. Hashsmith remembers your layout.
+- **Your view.** Show only the source, only the preview or both side by side. Hide the sidebar and drag the dividers to resize the columns. Downsmith remembers your layout.
 - **Folders and recent files.** Open a folder, browse its Markdown files in a sidebar and jump back to what you edited last.
 - **Native.** The real menu bar with the shortcuts you know, in English or German. It uses the system web view instead of shipping a browser, so the macOS app is about 10 MB.
 - **Light and dark.** Editor, preview and export follow your system appearance.
@@ -63,7 +63,7 @@
 Grab the file for your system from the **[latest release](../../releases/latest)**.
 
 ### macOS (13 Ventura or later, Apple silicon and Intel)
-1. Download the `.dmg`, open it and drag **Hashsmith** onto *Applications*.
+1. Download the `.dmg`, open it and drag **Downsmith** onto *Applications*.
 2. Start it. The app is signed and notarized by Apple, so there is no Gatekeeper warning.
 
 A Mac App Store version is on its way.
@@ -71,11 +71,11 @@ A Mac App Store version is on its way.
 ### Linux (64-bit)
 | Package | Install |
 |---|---|
-| `.AppImage` | `chmod +x Hashsmith_*.AppImage && ./Hashsmith_*.AppImage` |
-| `.deb` (Debian, Ubuntu) | `sudo apt install ./Hashsmith_*_amd64.deb` |
-| `.rpm` (Fedora, openSUSE) | `sudo dnf install ./Hashsmith-*.rpm` |
+| `.AppImage` | `chmod +x Downsmith_*.AppImage && ./Downsmith_*.AppImage` |
+| `.deb` (Debian, Ubuntu) | `sudo apt install ./Downsmith_*_amd64.deb` |
+| `.rpm` (Fedora, openSUSE) | `sudo dnf install ./Downsmith-*.rpm` |
 
-The packages need WebKitGTK 4.1 (`libwebkit2gtk-4.1`). The Linux builds are new and have seen less testing than the macOS app. If something does not work, please [open an issue](../../issues) or write to <contact@hashsmith.dev>.
+The packages need WebKitGTK 4.1 (`libwebkit2gtk-4.1`). The Linux builds are new and have seen less testing than the macOS app. If something does not work, please [open an issue](../../issues) or write to <contact@downsmith.dev>.
 
 ## Keyboard shortcuts
 
@@ -95,8 +95,8 @@ The packages need WebKitGTK 4.1 (`libwebkit2gtk-4.1`). The Linux builds are new 
 
 ## Support
 
-Hashsmith is free and always will be. If it saves you time, a small donation helps me keep building it: **[github.com/sponsors/alexelmi](https://github.com/sponsors/alexelmi)**.
+Downsmith is free and always will be. If it saves you time, a small donation helps me keep building it: **[github.com/sponsors/alexelmi](https://github.com/sponsors/alexelmi)**.
 
 ## About this repository
 
-This repository only hosts the download files (see [Releases](../../releases)) and this page. Hashsmith's source code is in a private repository. Questions, bug reports and ideas are welcome in the [issues](../../issues) or at <contact@hashsmith.dev>.
+This repository only hosts the download files (see [Releases](../../releases)) and this page. Downsmith's source code is in a private repository. Questions, bug reports and ideas are welcome in the [issues](../../issues) or at <contact@downsmith.dev>.
