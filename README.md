@@ -32,7 +32,10 @@
 
 ## Why Downsmith
 
-- **Live preview.** Source on the left, rendered page on the right. Tables, task lists and code blocks with syntax highlighting.
+- **Live preview.** Source on the left, rendered page on the right, scrolling together. Tables, task lists you can tick off, footnotes, note boxes and code blocks with syntax highlighting.
+- **Write.** Bold, italic, links and headings from the Format menu. Focus mode fades everything but the current paragraph, typewriter scrolling keeps your line in the middle, and a status bar counts words and reading time.
+- **Find and jump.** Search and replace, and an outline of your headings in the sidebar.
+- **Always up to date.** When another program changes an open file, Downsmith shows the new text (and asks first if you have unsaved edits). Drop files or a folder on the window to open them.
 - **Tabs.** Open several files at once, each with its own undo history. Your tabs come back at the next start, and closing with unsaved changes asks Save, Don't Save or Cancel.
 - **Your view.** Show only the source, only the preview or both side by side. Hide the sidebar and drag the dividers to resize the columns. Downsmith remembers your layout.
 - **Folders and recent files.** Open a folder, browse its Markdown files in a sidebar and jump back to what you edited last.
@@ -66,7 +69,7 @@ Grab the file for your system from the **[latest release](../../releases/latest)
 1. Download the `.dmg`, open it and drag **Downsmith** onto *Applications*.
 2. Start it. The app is signed and notarized by Apple, so there is no Gatekeeper warning.
 
-A Mac App Store version is on its way.
+Downsmith is also in the [Mac App Store](https://apps.apple.com/app/id6818861246).
 
 ### Linux (64-bit)
 | Package | Install |
@@ -92,6 +95,14 @@ The packages need WebKitGTK 4.1 (`libwebkit2gtk-4.1`). The Linux builds are new 
 | Show or hide the sidebar | `⇧⌘B` | `Ctrl+Shift+B` |
 | Source only / both / preview only | `⌥⌘1` / `⌥⌘2` / `⌥⌘3` | `Ctrl+Alt+1` / `2` / `3` |
 | Larger / smaller / actual text size | `⌘+` / `⌘-` / `⌘0` | `Ctrl+` / `Ctrl-` / `Ctrl+0` |
+| Find / next / previous | `⌘F` / `⌘G` / `⇧⌘G` | `Ctrl+F` / `Ctrl+G` / `Ctrl+Shift+G` |
+| Find and replace | `⌥⌘F` | `Ctrl+Alt+F` |
+| Bold / italic / link | `⌘B` / `⌘I` / `⌘K` | `Ctrl+B` / `Ctrl+I` / `Ctrl+K` |
+| Inline code / strikethrough | `⌘E` / `⇧⌘X` | `Ctrl+E` / `Ctrl+Shift+X` |
+| Heading 1 / 2 / 3 | `⌘1` / `⌘2` / `⌘3` | `Ctrl+1` / `2` / `3` |
+| Focus mode / typewriter scrolling | `⇧⌘F` / `⌥⌘T` | `Ctrl+Shift+F` / `Ctrl+Alt+T` |
+| Status bar | `⌘/` | `Ctrl+/` |
+| Show outline / show files | `⌥⌘O` / `⌥⌘L` | `Ctrl+Alt+O` / `Ctrl+Alt+L` |
 
 ## Support
 
