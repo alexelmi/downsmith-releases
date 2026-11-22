@@ -6,7 +6,7 @@
 
 <p align="center">
   <strong>Shape your Markdown.</strong><br>
-  A small, quick Markdown editor for macOS and Linux. Write on the left, see the finished page on the right.
+  A small, quick Markdown editor for macOS and Linux, built for AI agents: watch them write, see what changed.
 </p>
 
 <p align="center">
@@ -26,12 +26,14 @@
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="img/app-dark.png">
-    <img src="img/app-light.png" alt="Downsmith window: tabs on top, a folder sidebar, the Markdown source in the middle and the rendered page on the right" width="860">
+    <img src="img/app-light.png" alt="Downsmith window after an AI agent changed the open plan: a bar counts the changes, the changed lines are marked in the source and the preview, and the preview shows the plan's diagram" width="860">
   </picture>
 </p>
 
 ## Why Downsmith
 
+- **Built for AI agents.** Coding agents write plans, specs and notes as Markdown. Downsmith follows the file as the agent rewrites it and marks what changed, in the source and in the preview, with *Next change* and *Seen*. It can also follow the newest Markdown file of a folder. Downsmith itself has no AI and sends nothing anywhere.
+- **Images.** Local images (also SVG) show in the preview. Paste a screenshot or drop an image into the editor and it is copied into an `assets` folder next to the document. Images from the web are not loaded.
 - **Live preview.** Source on the left, rendered page on the right, scrolling together. Tables, task lists you can tick off, footnotes, note boxes and code blocks with syntax highlighting.
 - **Write.** Bold, italic, links and headings from the Format menu. Focus mode fades everything but the current paragraph, typewriter scrolling keeps your line in the middle, and a status bar counts words and reading time.
 - **Find and jump.** Search and replace, and an outline of your headings in the sidebar.
@@ -48,18 +50,37 @@
 
 <table>
   <tr>
-    <td width="50%"><img src="img/02-tables-and-tasks.png" alt="Tables and task lists in the preview"></td>
-    <td width="50%"><img src="img/03-code.png" alt="Code blocks with syntax highlighting"></td>
+    <td width="50%"><img src="img/02-agent-changes.png" alt="After an AI agent changed the plan: the changed lines are marked in the source and the preview"></td>
+    <td width="50%"><img src="img/03-tables-and-tasks.png" alt="Tables and task lists in the preview"></td>
   </tr>
   <tr>
-    <td width="50%"><img src="img/04-dark-mode.png" alt="Dark mode"></td>
-    <td width="50%"><img src="img/05-folders.png" alt="A folder of notes in the sidebar"></td>
+    <td width="50%"><img src="img/04-code.png" alt="Code blocks with syntax highlighting"></td>
+    <td width="50%"><img src="img/05-dark-mode.png" alt="Dark mode"></td>
   </tr>
   <tr>
-    <td width="50%"><img src="img/06-views.png" alt="Only the preview, with the source and both-panes buttons in the toolbar"></td>
+    <td width="50%"><img src="img/06-folders.png" alt="A folder of notes in the sidebar"></td>
+    <td width="50%"><img src="img/07-views.png" alt="Only the preview, with the source and both-panes buttons in the toolbar"></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="img/08-outline.png" alt="The outline of a note in the sidebar"></td>
     <td width="50%"><img src="img/01-write-and-preview.png" alt="Several notes in tabs, source on the left and preview on the right"></td>
   </tr>
 </table>
+
+## Use it with your agent
+
+Open the file your agent is working on:
+
+```sh
+open -a Downsmith plan.md   # macOS
+downsmith plan.md           # Linux (.deb and .rpm packages)
+```
+
+To let the agent do it, add a line like this to its instructions file (`AGENTS.md` or `CLAUDE.md`):
+
+> When you write a plan or spec, open it with `open -a Downsmith <file>` so I can follow it.
+
+Switch on **View > Follow Newest File** to have Downsmith open whichever Markdown file in the sidebar's folder was written last.
 
 ## Install
 
@@ -103,6 +124,7 @@ The packages need WebKitGTK 4.1 (`libwebkit2gtk-4.1`). The Linux builds are new 
 | Focus mode / typewriter scrolling | `⇧⌘F` / `⌥⌘T` | `Ctrl+Shift+F` / `Ctrl+Alt+T` |
 | Status bar | `⌘/` | `Ctrl+/` |
 | Show outline / show files | `⌥⌘O` / `⌥⌘L` | `Ctrl+Alt+O` / `Ctrl+Alt+L` |
+| Next / previous change | `⌥⌘↓` / `⌥⌘↑` | `Ctrl+Alt+Down` / `Ctrl+Alt+Up` |
 
 ## Support
 
